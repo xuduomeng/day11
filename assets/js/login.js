@@ -42,7 +42,6 @@ $(function () {
                 }
                 layer.msg('注册成功')
             }
-
         })
     })
     $('#login_req').submit(function (e) {
@@ -59,7 +58,7 @@ $(function () {
                 layer.msg('登录成功') 
                 //把res.token存入本地存储  localstrage中  后面验证需要用
                 localStorage.setItem('token', res.token)
-                // location.href = 'index.html'
+                location.href = 'index.html'
             }
         })
     })
